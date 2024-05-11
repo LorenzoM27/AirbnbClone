@@ -22,16 +22,9 @@ struct ListingItemView: View {
             
             // images
             
-            TabView {
-                ForEach(images, id: \.self) { image in
-                    Image(image)
-                        .resizable()
-                        .scaledToFill()
-                }
-            }
-            .frame(height: 320)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
-            .tabViewStyle(.page) // Caroussel
+            ListingImageCarousselView()
+                .frame(height: 320)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
             
             // listing details
             
@@ -41,6 +34,7 @@ struct ListingItemView: View {
                     
                     Text("Miami, Florida")
                         .fontWeight(.semibold)
+                        .foregroundStyle(.black)
                     
                     Text("à 12km")
                         .foregroundStyle(.gray)
@@ -53,6 +47,7 @@ struct ListingItemView: View {
                             .fontWeight(.semibold)
                         Text("par nuit")
                     }
+                    .foregroundStyle(.black)
                 }
                 
                 Spacer()
@@ -63,8 +58,8 @@ struct ListingItemView: View {
                     Image(systemName: "star.fill")
                     
                     Text("4.86")
-                    
                 }
+                .foregroundStyle(.black)
             }
             .font(.footnote)
         }
