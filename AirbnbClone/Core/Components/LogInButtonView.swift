@@ -9,7 +9,18 @@ import SwiftUI
 
 struct LogInButtonView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        Button {
+            print("log in")
+        } label: {
+            Text("Se connecter")
+                .foregroundStyle(.white)
+                .font(.subheadline)
+                .fontWeight(.semibold)
+                .frame(width: 360, height: 48)
+                .background(.pink)
+                .clipShape(RoundedRectangle(cornerRadius: 8))
+        }
     }
 }
 

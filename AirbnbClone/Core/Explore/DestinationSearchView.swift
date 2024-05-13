@@ -25,6 +25,7 @@ struct DestinationSearchView: View {
     
     var body: some View {
         VStack {
+            // Button view
             HStack {
                 Button {
                     withAnimation(.snappy) {
@@ -180,10 +181,5 @@ struct CollapsePickerView: View {
                     .font(.subheadline)
             }
         }
-//        .padding()
-//        .background(.white)
-//        .clipShape(RoundedRectangle(cornerRadius: 12))
-//        .padding()
-//        .shadow(radius: 10)
     }
 }
