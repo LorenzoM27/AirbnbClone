@@ -37,6 +37,7 @@ struct ListingDetailView: View {
                         }
                         .padding(32)// padding sur l'image et pas le bouton c'est important sinon pas cliquable, on doit en mettre un a cause du ignoresafearea
                 }
+                .padding()
 
             }
             
