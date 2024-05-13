@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct listings: Identifiable, Codable {
+struct Listing: Identifiable, Codable {
     
     let id: String
     let ownerId: String
@@ -21,6 +21,7 @@ struct listings: Identifiable, Codable {
     var pricePerNight: Int
     let latitude: Double
     let longitude: Double
+    var imageURLs : [String]
     let address: String
     let city: String
     let country: String
