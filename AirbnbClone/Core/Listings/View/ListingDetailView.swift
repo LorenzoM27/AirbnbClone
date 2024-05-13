@@ -9,14 +9,7 @@ import SwiftUI
 import MapKit
 
 struct ListingDetailView: View {
-    
-    var images = [
-        "listing-1",
-        "listing-2",
-        "listing-3",
-        "listing-4"
-    ]
-    
+
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -178,6 +171,7 @@ struct ListingDetailView: View {
             }
             .padding()
         }
+        .toolbar(.hidden, for: .tabBar) // Masquer la tab bar sur cette vue
         .ignoresSafeArea()
         .padding(.bottom, 64)
         // overlay ou ZStack c'est la même chose
