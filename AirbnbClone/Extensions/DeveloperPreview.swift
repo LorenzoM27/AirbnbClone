@@ -10,6 +10,9 @@ import Foundation
 // C'est la qu'on va mettre nos données fictives
 
 class DeveloperPreview {
+    // permet de pas initialiser
+    static let shared = DeveloperPreview()
+    
     var listing: [Listing] = [
         .init(
             id: NSUUID().uuidString,
@@ -50,7 +53,7 @@ class DeveloperPreview {
             city: "Quarteira",
             country: "Portugal",
             title: "Grande maison de ville",
-            rating: 4.86,
+            rating: 4.5,
             features: [.superHost],
             ametities: [.wifi, .kitchen, .alarmSystem, .tv, .laundry, .office],
             type: .townhouse
@@ -72,7 +75,7 @@ class DeveloperPreview {
             city: "Lisboa",
             country: "Portugal",
             title: "Appartement",
-            rating: 4.86,
+            rating: 4.23,
             features: [.superHost],
             ametities: [.wifi, .kitchen, .alarmSystem, .tv, .laundry, .office],
             type: .apartment
@@ -94,7 +97,7 @@ class DeveloperPreview {
             city: "Lisboa",
             country: "Portugal",
             title: "Appartement",
-            rating: 4.86,
+            rating: 3.98,
             features: [.selfCheckIn],
             ametities: [.pool],
             type: .house
@@ -116,7 +119,7 @@ class DeveloperPreview {
             city: "Lisboa",
             country: "Portugal",
             title: "Appartement",
-            rating: 4.86,
+            rating: 4.99,
             features: [.selfCheckIn],
             ametities: [.balcony, .office],
             type: .apartment
@@ -138,7 +141,7 @@ class DeveloperPreview {
             city: "Lisboa",
             country: "Portugal",
             title: "Appartement",
-            rating: 4.86,
+            rating: 4.61,
             features: [.selfCheckIn],
             ametities: [.tv, .laundry, .wifi],
             type: .house
